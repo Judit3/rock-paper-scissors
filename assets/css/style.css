@@ -1,3 +1,7 @@
+/* Google fonts import */
+
+
+
 /* asterisk wildcard selector to override default styles added by the browser */
 
 * {
@@ -6,9 +10,16 @@
     box-sizing: border-box;
 }
 
-/* Google fonts import */
+/* general style */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 /* Header */
+
 header {
     background-color: pink;
 }
@@ -17,11 +28,11 @@ header {
 
 main {
     background-color: lightblue;
+    flex: 1 0 auto;
 }
 
 /* Footer */
 
 footer {
     background-color: gray;
-
 }
