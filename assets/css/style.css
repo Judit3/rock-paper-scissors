@@ -1,1 +1,19 @@
 /* Google fonts import */
+
+/* Header */
+header {
+    background-color: pink;
+}
+
+/* Main */
+
+main {
+ background-color: lightblue;
+}
+
+/* Footer */
+
+footer {
+    background-color: gray;
+
+}
