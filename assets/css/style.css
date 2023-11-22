@@ -23,6 +23,21 @@ body {
 
 header {
     background-color: pink;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.image-logo {
+   height: 4rem;
+   padding: 10px 10px 0 10px;
+   
+}
+
+#image-logo-r {
+    transform: scaleX(-1);
 }
 
 /* Main */
