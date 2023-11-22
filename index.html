@@ -22,30 +22,34 @@
     <!-- Header -->
     <header>
         <img class="image-logo" alt="rock paper scissors image" src="assets/images/all.png">
-        <h1 id="logo">rock paper scissors</h1>
-        <img class="image-logo" class="image-logo-r" alt="rock paper scissors image" src="assets/images/all.png">
+        <h1>rock paper scissors</h1>
+        <img class="image-logo image-logo-r" alt="rock paper scissors image" src="assets/images/all.png">
     </header>
 
     <!-- Main content -->
-    <main>main content
-        <div>buttons
-            <button class="button" data-type="rock"><img src="assets/images/rock.png" alt="rock"></button>
-            <button class="button" data-type="paper"><img src="assets/images/paper.png" alt="paper"></button>
-            <button class="button" data-type="scissors"><img src="assets/images/scissors.png" alt="scissors"></button>
+    <main>
+        <h2 class="play">play</h2>
+        <div class="buttons">
+            <button class="button" data-type="rock" aria-label="rock"><img class="btn-image" src="assets/images/rock.png" alt="rock"></button>
+            <button class="button" data-type="paper" aria-label="paper"><img class="btn-image" src="assets/images/paper.png" alt="paper"></button>
+            <button class="button" data-type="scissors" aria-label="scissors"><img class="btn-image" src="assets/images/scissors.png" alt="scissors"></button>
         </div>
-        <div>
-            player
+        <div class="player">
+            <img id="player-img" src="assets/images/all.png" alt="rock paper scissors">
         </div>
-        <div>
-            computer
+        <div class="computer">
+            <img id="computer-img" src="assets/images/all.png" alt="rock paper scissors">
         </div>
-        <div>
+        <div class="score">
             score area
         </div>
     </main>
     
     <!-- Footer -->
-    <footer>footer</footer>
+    <footer>
+        <h2 class="rules">rules</h2>
+        <p>Scisors cut Paper, aper covers Rock, Rock smash Scissors</p>
+    </footer>
 
     <!-- Script -->
     <script src="assets/js/script.js"></script>
