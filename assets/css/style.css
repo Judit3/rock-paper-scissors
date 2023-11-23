@@ -22,12 +22,13 @@ body {
 /* Header */
 
 header {
-    background-color: pink;
+    background-color: lightgray;
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    min-height: 15vh;
 }  
 
 h1 {
@@ -49,7 +50,7 @@ h1 {
 /* Main */
 
 main {
-    background-color: lightblue;
+    background-color: whitesmoke;
     flex: 1 0 auto;
 }
 
@@ -68,7 +69,7 @@ main {
 
 .button {
     cursor: pointer;
-    background-color: aquamarine;
+    background-color: rgb(118, 172, 156);
     width: 2rem;
     height: 2rem;
     padding: 40px;
@@ -78,7 +79,7 @@ main {
 }
 
 .button:hover {
-    background-color: coral;
+    background-color: lightblue;
 }
 
 .btn-image {
@@ -98,17 +99,18 @@ main {
 .player,
 .computer {
     width: 45%;
-    background-color: lightcoral;
     margin: 1%;
     text-align: center;
 }
 
 .player {
     float: left;
+    background-color: lightblue;
 }
 
 .computer {
     float: right;
+    background-color: lightcoral;
 }
 
 #player-img,
@@ -136,7 +138,7 @@ main {
 /* Footer */
 
 footer {
-    background-color: gray;
+    background-color: lightgray;
     text-align: center;
     min-height: 70px;
     line-height: 40px;
@@ -166,7 +168,6 @@ p {
     .player,
     .computer {
         width: 90%;
-        background-color: lightcoral;
         margin-bottom: 5%;
         text-align: center;
     }
