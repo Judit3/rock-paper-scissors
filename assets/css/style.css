@@ -150,8 +150,11 @@ p {
     padding-bottom: 20px;
 }
 
-@media (max-width: 414px) {
-    
+@media (max-width: 425px) {
+    h1 {
+        text-align: center;
+    }
+
     .game-area {
         display: flex;
         flex-direction: column;
@@ -170,18 +173,16 @@ p {
     .score-box {
         clear: both;
         margin: 50px 1%;
-        width: 85%;
         font-size: 1rem;
-        display: inline-block;
-        }
+        display: flex;
+        flex-direction: column;
+    }
     
-        #score-p {
-        float: left;
-        }
+    #score-p {
+        margin-bottom: 2rem;
+    }
     
-        #score-c {
-        float: right;
-        }
-
-
+    #score-c {
+    margin-bottom: 2rem;
+    }
 }
