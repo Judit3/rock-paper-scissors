@@ -8,7 +8,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
 
 /* general style */
@@ -57,11 +56,14 @@ main {
 .play {
     text-align: center;
     line-height: 5rem;
+    text-transform: uppercase;
 }
  /* Buttons */
 .buttons {
     display: flex;
     justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .button {
@@ -84,7 +86,52 @@ main {
     height: 2rem;  
 }
 
-/* */
+    /* Game area */
+.game-area {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.player,
+.computer {
+    width: 45%;
+    background-color: lightcoral;
+    margin: 1%;
+    text-align: center;
+}
+
+.player {
+    float: left;
+}
+
+.computer {
+    float: right;
+}
+
+#player-img,
+#computer-img {
+    width: 75%;
+    padding: 1%;
+}
+
+.score-box {
+    clear: both;
+    margin: 50px 1%;
+    width: 85%;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+#score-p {
+    float: left;
+}
+
+#score-c {
+    float: right;
+}
 
 /* Footer */
 
@@ -101,4 +148,40 @@ footer {
 
 p {
     padding-bottom: 20px;
+}
+
+@media (max-width: 414px) {
+    
+    .game-area {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .player,
+    .computer {
+        width: 90%;
+        background-color: lightcoral;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .score-box {
+        clear: both;
+        margin: 50px 1%;
+        width: 85%;
+        font-size: 1rem;
+        display: inline-block;
+        }
+    
+        #score-p {
+        float: left;
+        }
+    
+        #score-c {
+        float: right;
+        }
+
+
 }
