@@ -24,3 +24,20 @@ document.addEventListener("DOMContentLoaded", function () {
 function runGame(gameType) {
 
 }
+
+function incrementPlayerScore {
+
+}
+
+function incrementComputerScore {
+
+}
+
+function displayPlayerChoice {
+
+}
+
+function displayComputerChoice {
+    
+}
+
