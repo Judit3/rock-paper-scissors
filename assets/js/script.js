@@ -40,4 +40,27 @@ function playGame(playerChoice) {
  * Check who the winner is
  */
 
-function winner()
+function winner(pylaerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        alert("Tie");
+    } else if (
+        (playerChoice === "rock" && computerChoice === "scissors") ||
+        (playerChoice === "paper" && computerChoice === "rock") ||
+        (playerChoice === "scissors" && computerChoice === "paper")
+    ) {
+        alert("Win");
+    } else {
+        alert("Lose");
+    }        
+}
+
+function updateScore(result) {
+    let playerScoreValue = parseInt(playerScore.innerText);
+    let computerScoreValue = parseInt(computerScore.innerText); 
+
+    if (result === "Win") {
+        playerScoreValue++;
+    } else if (result === "Lose") {
+        computerScoreValue++
+    }
+}
