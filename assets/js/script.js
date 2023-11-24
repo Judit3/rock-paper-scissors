@@ -39,7 +39,6 @@ function playGame(playerChoice) {
 /**
  * Check who the winner is
  */
-
 function winner(pylaerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         alert("Tie");
@@ -54,6 +53,9 @@ function winner(pylaerChoice, computerChoice) {
     }        
 }
 
+/**
+ * Update scores
+ */
 function updateScore(result) {
     let playerScoreValue = parseInt(playerScore.innerText);
     let computerScoreValue = parseInt(computerScore.innerText); 
