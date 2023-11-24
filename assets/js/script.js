@@ -1,43 +1,43 @@
-// Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("button");
-
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            if (this.getAttribute("data-type")) {
-              let gameType = this.getAttribute("data-type");
-                runGame(gameType);
-            }
-        });
-        }
-
-    runGame("xxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-}); 
+/**
+ * Declare constants for Dom elements
+ * and possible choices
+ */
+let buttons = document.getElementsByClassName("button");
+let playerScore = document.getElementById("player-score");
+let computerScore = document.getElementById("computer-score");
+let playerImage = document.getElementById("player-img");
+let computerImage = document.getElementById("computer-img");
+let choices = ["rock", "paper", "scissors"];
 
 /**
- * The main game "loop", called when the script is first loaded
- * and after user's answer has been processed
+ * Add eventlistener to all the buttons
  */
-function runGame(gameType) {
-
+for (let button of buttons) {
+    button.addEventListener("click", function(){
+        let playerChoice = this.getAttribute("data-type");
+        playGame(playerChoice);
+    });
 }
 
-function incrementPlayerScore {
+/**
+ * Game function. Accepts the chosen value of the selected button
+ */
+function playGame(playerChoice) {
+    playerImage.src = `assets/images/${choices[playerChoice]}.png`;
+    playerImage.alt = choices[playerChoice];
 
+    let computerChoice = Math.floor(Math.random() * 3);
+
+    computerImage.src = `assets/images/${choices[computerChoice]}.png`;
+    computerImage.alt = choices[computerChoice];
+
+    let result = winner(choices[computerChoice], choices[playerChoice]):
+
+    updateScore(result);
 }
 
-function incrementComputerScore {
+/**
+ * Check who the winner is
+ */
 
-}
-
-function displayPlayerChoice {
-
-}
-
-function displayComputerChoice {
-    
-}
-
+function winner()
