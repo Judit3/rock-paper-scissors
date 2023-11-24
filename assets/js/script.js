@@ -31,7 +31,7 @@ function playGame(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    let result = winner(choices[computerChoice], choices[playerChoice]):
+    let result = winner(choices[computerChoice], choices[playerChoice]);
 
     updateScore(result);
 }
@@ -39,7 +39,7 @@ function playGame(playerChoice) {
 /**
  * Check who the winner is
  */
-function winner(pylaerChoice, computerChoice) {
+function winner(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         alert("Tie");
     } else if (
