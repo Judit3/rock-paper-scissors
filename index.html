@@ -1,67 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Meta tags for search engines -->
-    <meta name="description" content="Rock Paper Scissors game.">
-    <meta name="keywords" content="rock paper scissors, game, rock, paper, scissors"> 
+    <meta name="description" content="Rock Paper Scissors game." />
+    <meta
+      name="keywords"
+      content="rock paper scissors, game, rock, paper, scissors"
+    />
 
     <!-- Title -->
     <title>Rock Paper Scissors</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="assets/favicon_io/site.webmanifest"
+      crossorigin="use-credentials"
+    />
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
     <header>
-        <img class="image-logo" alt="rock paper scissors image" src="assets/images/all.png">
-        <h1>rock paper scissors</h1>
-        <img class="image-logo image-logo-r" alt="rock paper scissors image" src="assets/images/all.png">
+      <img
+        class="image-logo"
+        alt="rock paper scissors image"
+        src="assets/images/all.png"
+      />
+      <h1>rock paper scissors</h1>
+      <img
+        class="image-logo image-logo-r"
+        alt="rock paper scissors image"
+        src="assets/images/all.png"
+      />
     </header>
 
     <!-- Main content -->
     <main>
-        <h2 class="play">press one and play!</h2>
-        <div class="buttons">
-            <button class="button" data-type="rock" aria-label="rock"><img id= "rock" class="btn-image" src="assets/images/rock.png" alt="rock"></button>
-            <button class="button" data-type="paper" aria-label="paper"><img id="paper" class="btn-image" src="assets/images/paper.png" alt="paper"></button>
-            <button class="button" data-type="scissors" aria-label="scissors"><img id="scissors" class="btn-image" src="assets/images/scissors.png" alt="scissors"></button>
-        </div>
+      <h2 class="play">press one and play!</h2>
+      <div class="buttons">
+        <button class="button" data-type="rock" aria-label="rock">
+          <img
+            id="rock"
+            class="btn-image"
+            src="assets/images/rock.png"
+            alt="rock"
+          />
+        </button>
+        <button class="button" data-type="paper" aria-label="paper">
+          <img
+            id="paper"
+            class="btn-image"
+            src="assets/images/paper.png"
+            alt="paper"
+          />
+        </button>
+        <button class="button" data-type="scissors" aria-label="scissors">
+          <img
+            id="scissors"
+            class="btn-image"
+            src="assets/images/scissors.png"
+            alt="scissors"
+          />
+        </button>
+      </div>
 
-        <!-- Game area -->    
-        <section class="game-area">
-            <div class="player">
-                <img id="player-img" src="assets/images/all.png" alt="rock paper scissors">
-            </div>
-            <div class="computer">
-                <img id="computer-img" src="assets/images/all.png" alt="rock paper scissors">
-            </div>
-            <div class="score-box">
-                <h3 id="score-p">Your score: <span id="player-score">0</span></h3>
-                <h3 id="score-c">Computer score: <span id="computer-score">0</span></h3>   
-            </div>
-        </section>
+      <!-- Game area -->
+      <section class="game-area">
+        <div class="player">
+          <img
+            id="player-img"
+            src="assets/images/all.png"
+            alt="rock paper scissors"
+          />
+        </div>
+        <div class="computer">
+          <img
+            id="computer-img"
+            src="assets/images/all.png"
+            alt="rock paper scissors"
+          />
+        </div>
+        <div class="score-box">
+          <h3 id="score-p">Your score: <span id="player-score">0</span></h3>
+          <h3 id="score-c">
+            Computer score: <span id="computer-score">0</span>
+          </h3>
+        </div>
+      </section>
     </main>
-    
+
     <!-- Footer -->
     <footer>
-        <h2 class="rules">rules</h2>
-        <p>Scisors cut Paper, Paper covers Rock, Rock smash Scissors</p>
+      <h2 class="rules">rules</h2>
+      <p>Scisors cut Paper, Paper covers Rock, Rock smash Scissors</p>
     </footer>
 
     <!-- Script -->
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
