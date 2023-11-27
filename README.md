@@ -47,12 +47,12 @@ Rock, Paper Scissors is a game where the user plays against the machine which ge
 ### CSS validation
 
 The CSS code was validated using W3C tool.
-![css validation]()
+![css validation](assets/images/readme/css-test.png)
 
 ### HTML validation
 
 The HTML code was validated using the W3C tool.
-![html validation]()
+![html validation](assets/images/readme/html-test.png)
 
 ### JS validation
 
