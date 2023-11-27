@@ -34,30 +34,31 @@ Rock, Paper Scissors is a game where the user plays against the machine which ge
 
 ![Score area](assets/images/readme/score-area.png)
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
+- __The Footer__
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+  - The footer section shows the rtules of the game.
 
 ### Features Left to Implement
 
-- Another feature idea
+  - It could have some animation when the player wins or loses.
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### CSS validation
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+The CSS code was validated using W3C tool.
+![css validation]()
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+### HTML validation
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+The HTML code was validated using the W3C tool.
+![html validation]()
 
-### Validator Testing
+### JS validation
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+The JavaScript code was validated using the W3C tool.
+![js validation]()
+
 - JavaScript
   - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
     - The following metrics were returned:
@@ -65,6 +66,49 @@ If this section grows too long, you may want to split it off into a separate fil
     - Function with the largest signature takes 2 arguments, while the median is 0.
     - Largest function has 10 statements in it, while the median is 3.
     - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+
+### Performance
+
+Website performance was checked with Lighthouse tool.
+![lighthouse test]()
+
+### Accessibility
+
+To check accessibility the Wave Web Accessibility Evaluation tool was used. One error was detected, refer to [Bugs](##Bugs).
+![Wave test](assets/images/readme/wave-test.png)
+
+### Manual testing
+
+  - It was manually tested in different browsers, Chrome and Safari. 
+  - It was confirmed that the image displayed, the result and the update of scores were correct.
+
+Summarizing manual testing was done to check common elements and how the perform on different devices:
+
+1.	Clicking on the Navbar links brings the user to according page
+2.	Clicking on website name (SWHomes) brings the user to the Home page
+3.	The responsiveness of the Home page
+4.	The responsiveness of the About page
+5.	Clicking on View Larger Map button of the map brings the user to correct location.
+6.	Clicking on the Social Media icons brings the user to correctly allocated Social Media pages
+7.	The responsiveness of the Gallery page
+8.	The responsiveness of the Contact page
+9.	Filling out the form user must fill in all fields in order to be able to submit and upload files
+
+Following devices and browsers were used:
+
+Laptop:
+
+- Macbook Pro
+
+Mobile Devices:
+
+- iPhone SE
+  
+Browsers:
+
+- Google Chrome
+- Safari
+
 
 ### Unfixed Bugs
 
