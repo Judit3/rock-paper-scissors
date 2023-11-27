@@ -4,6 +4,24 @@ Rock, Paper Scissors is a game where the user plays against the machine which ge
 
 ![Responsice Mockup](assets/images/readme/responsive.png)
 
+## Design
+
+### Typography
+
+Google Fonts was used for the Josefin Sans, it is used for the entire site. It is a sans-serif font. It was chosen as it looked clean and modern.
+
+![Font](assets/images/readme/font.png)
+
+### Imagery
+
+The images were taken from clipartmax.com. I have credited these in the [Credits](#credits) section.
+
+### Wireframes
+
+Wireframes were created for mobile and desktop. The wireframes were generates using balsamic, and the images were modified with canvas.
+
+![wireframe](assets/images/readme/balsamic.png)
+
 ## Features
 
 ### Existing Features
@@ -42,6 +60,10 @@ Rock, Paper Scissors is a game where the user plays against the machine which ge
 
   - It could have some animation when the player wins or loses.
 
+### Accessibility
+
+Alt-labels are used for images. Aria-labels for screen readers are implemented at certain places, also semantic elements are used so the page is easy to navigate.
+
 ## Testing
 
 ### CSS validation
@@ -79,20 +101,11 @@ To check accessibility the Wave Web Accessibility Evaluation tool was used. One 
 
 ### Manual testing
 
-  - It was manually tested in different browsers, Chrome and Safari. 
-  - It was confirmed that the image displayed, the result and the update of scores were correct.
+Manual testing was done to check common elements and how the perform on different devices:
 
-Summarizing manual testing was done to check common elements and how the perform on different devices:
-
-1.	Clicking on the Navbar links brings the user to according page
-2.	Clicking on website name (SWHomes) brings the user to the Home page
-3.	The responsiveness of the Home page
-4.	The responsiveness of the About page
-5.	Clicking on View Larger Map button of the map brings the user to correct location.
-6.	Clicking on the Social Media icons brings the user to correctly allocated Social Media pages
-7.	The responsiveness of the Gallery page
-8.	The responsiveness of the Contact page
-9.	Filling out the form user must fill in all fields in order to be able to submit and upload files
+1.	Clicking on any of the buttons loads the right image on the player choice and the computer choice is automatically generated, trigering the win/lose alert and updating the scores
+2.  Confirmation that the image displayed, the result and the update of scores were correct
+3.	The responsiveness of the web page
 
 Following devices and browsers were used:
 
@@ -108,22 +121,72 @@ Browsers:
 
 - Google Chrome
 - Safari
-
-
+  
 ### Unfixed Bugs
 
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
 
+## Technologies used
+
+__GitHub__ – storage and deployment<br>
+__Codeanywhere__ – IDE used to write, edit, commit and push the code to GitHub<br>
+__Google Fonts__ – import font<br>
+__Font Awesome__- import social media and contact icons<br>
+__Favicon Generator Website__ – convert logo<br>
+__Balsamiq__ – wireframes design<br>
+__Am I Responsive?__ – check responsiveness of the website<br>
+__Python__ - python 3 via terminal to preview my site using a local http server<br>
+__HTML5__ - build the core of the site<br>
+__CSS__ - style the website and define fonts and layout<br>
+__Google Chrome__ - build and test the website<br>
+__Canva__ - change format of images<br>
+
+### Languages used
+
+- HTML
+- CSS
+- Javascript
+
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
+The site was deployed to GitHub pages.
+The project was developed in CodeAnywhere application, where it was committed and pushed to GitHub where it was deployed.
+The live link can be found here - <https://judit3.github.io/rock-paper-scissors/>
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows:
-  - In the GitHub repository, navigate to the Settings tab
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+### How to deploy
 
-The live link can be found here - <https://code-institute-org.github.io/love-maths/>
+1. Log into your account on github
+2. Go to the repository of this project, Judit3/rock-paper-scissors
+3. Go to the Settings tab of this GitHub repository
+4. On the left-hand sidebar, in the Code and automation section, select Pages
+5. Make sure:
+
+- Source is set to 'Deploy from Branch'
+- Main branch is selected
+- Folder is set to / (root)
+
+6. Under Branch, click Save
+7. Go back to the Code tab. Wait a few minutes for the build to finish and refresh your repository
+8. On the right-hand side, in the Deployments section, click on 'github-pages'
+9. Click on the "open in another tab" symbol to see the live site. The URL will be judit3.github.io/rock-paper-scissors/
+
+### Local development
+
+#### How to clone
+
+1. Log into your account on github
+2. Go to the repository of this project, Judit3/rock-paper-scissors
+3. Click on the code button, and copy your preferred clone link
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory
+5. Type 'git clone' into the terminal, paste the link you copied in step 3 and press enter
+
+#### How to fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github
+2. Go to the repository for this project, Judit3/rock-paper-scissors
+3. Click the Fork button in the top right corner
 
 ## Credits
 
