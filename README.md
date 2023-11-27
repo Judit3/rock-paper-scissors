@@ -14,26 +14,25 @@ Rock, Paper Scissors is a game where the user plays against the machine which ge
 
 ![Logo](assets/images/all.png)
 
-- __The Game Area__
+- __The Game Options__
 
-  - This section will allow the user to play the game. The user will be able to easily see buttons with icons that allow them to play and his selection and the computer randomly generated choice.
-  - The user will be able to select between rock, paper or scissors to be played, they will be playing by clicking on the different icons.
-  - The user can also follow on his and the computer progress on the automatically generated scores.
+  - This section will allow the user to play the game. The users will be able to easily see buttons with icons that allow them to play.
+  - The users will be able to select between rock, paper or scissors to be played, they will be playing by clicking on the different buttons with icons, the chosen buton will change its color to match the color of the players choice displayed under the buttons.
   
-![Game](media/love_maths_icons.png)
+![Buttons area](assets/images/readme/buttons-area.png)
 
-- __The Question section__
+- __The Choice Area__
 
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly.
+  - The choice area is where the users will be able to see their choice and the computer generated choice.
+  - Once users have made their selection by clicking on on of the buttons a pop-up will make it known to the users if they won or lose and the images of their and the computer choices will be shown.
 
-![Question](media/love_maths_question.png)
+![Choice area](assets/images/readme/choice-area.png)
 
 - __The Score Area__
 
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided.
+  - This section will allow the users to see exactly how many times they and the computer won.
 
-![score](media/love_maths_answer.png)
+![Score area](assets/images/readme/score-area.png)
 
 For some/all of your features, you may choose to reference the specific project files that implement them.
 
