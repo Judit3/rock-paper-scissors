@@ -6,12 +6,18 @@ document.addEventListener('DOMContentLoaded', function () {
      * and possible choices
      */
     const buttonsGames = document.getElementsByClassName("button");
-    const playerScore = document.getElementById("player-score");
-    const computerScore = document.getElementById("computer-score");
     const playerImage = document.getElementById("player-img");
     const computerImage = document.getElementById("computer-img");
     const choices = ["rock", "paper", "scissors"];
     let messagePlayer = document.getElementById("message");
+    let scorePlayer = document.getElementById("player-score");
+    let scoreComputer = document.getElementById("computer-score");
+
+    let scorePlayerPoints = 0;
+    let scoreComputerPoints = 0;
+
+    scorePlayer.textContent = 0;
+    scoreComputer.textContent = 0;
 
     /**
      * Add eventlistener to all the buttonsGames
@@ -37,9 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         computerImage.src = `assets/images/${choices[computerChoice]}.png`;
         computerImage.alt = choices[computerChoice];
 
-        let result = winner(choices[indice], choices[computerChoice]);
-
-        updateScore(result);
+        winner(choices[indice], choices[computerChoice]);
     }
 
     /**
@@ -54,43 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
             (playerChoice === "scissors" && computerChoice === "paper")
         ) {
             messagePlayer.textContent = "Win";
+            scorePlayerPoints = scorePlayerPoints + 1
+            scorePlayer.textContent = scorePlayerPoints 
         } else {
             messagePlayer.textContent = "Lose";
+            scoreComputerPoints = scoreComputerPoints + 1;
+            scoreComputer.textContent = scoreComputerPoints 
         }
     }
-
-    /**
-    * Update scores
-    */
-    function updateScore() {
-
-        let playerScoreValue = parseInt(playerScore.innerText);
-        let computerScoreValue = parseInt(computerScore.innerText);
-
-        if (result === "Win") {
-            playerScoreValue++;
-        } else if (result === "Lose") {
-            computerScoreValue++;
-        }
-    }
-    /**
-     * Gets the current score from the DOM and increments it by 1
-     */
-    function incrementScore() {
-
-        let player = parseInt(document.getElementById("score").innerText);
-        document.getElementById("score").innerText = ++oldScore;
-    }
-
-    /**
-     * Gets the current tally of incorrect answers from the DOM and increments it by 1
-     */
-    function incrementWrongAnswer() {
-
-        let oldScore = parseInt(document.getElementById("incorrect").innerText);
-        document.getElementById("incorrect").innerText = ++oldScore;
-
-    }
-
-
 });
