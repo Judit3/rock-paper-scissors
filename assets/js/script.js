@@ -24,7 +24,6 @@ for (let button of buttonsGames) {
  * Game function. Accepts the chosen value of the selected button
  */
 function playGame(playerChoice) {
-    console.log(playerChoice);
     const indice = choices.indexOf(playerChoice);
 
     playerImage.src = `assets/images/${choices[indice]}.png`;
@@ -35,65 +34,34 @@ function playGame(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    // let result = winner(choices[computerChoice], choices[playerChoice]);
+    let result = winner(choices[indice], choices[computerChoice]);
 
-    // updateScore(result);
+    updateScore(result)
 }
 
 /**
  * Check who the winner is
  */
 
-/* function winner(playerChoice, computerChoice) {
+function winner(playerChoice, computerChoice) {
+
     if (playerChoice === computerChoice) {
-        alert("Tie");
+        document.getElementById(message).innerText= "Tie";
     } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
         (playerChoice === "paper" && computerChoice === "rock") ||
         (playerChoice === "scissors" && computerChoice === "paper")
     ) {
-        alert("Win");
+        document.getElementById(message).innerText= "Win";
     } else {
-        alert("Lose");
+        document.getElementById(message).innerText= "Lose";
     }
-} */
+} 
 
 /**
- * Update scores
- */
+* Update scores
+*/
 function updateScore(result) {
-
-    /**
-     * Check who the winner is
-     */
-    function winner(playerChoice, computerChoice) {
-        if (playerChoice === computerChoice) {
-            alert("Tie");
-        } else if (
-            (playerChoice === "rock" && computerChoice === "scissors") ||
-            (playerChoice === "paper" && computerChoice === "rock") ||
-            (playerChoice === "scissors" && computerChoice === "paper")
-        ) {
-            alert("Win");
-        } else {
-            alert("Lose");
-        }
-    }
-
-    /**
-     * Update scores
-     */
-    function updateScore(result) {
-
-        let playerScoreValue = parseInt(playerScore.innerText);
-        let computerScoreValue = parseInt(computerScore.innerText);
-
-        if (result === "Win") {
-            playerScoreValue++;
-        } else if (result === "Lose") {
-            computerScoreValue++;
-        }
-    }
 
     let playerScoreValue = parseInt(playerScore.innerText);
     let computerScoreValue = parseInt(computerScore.innerText);
