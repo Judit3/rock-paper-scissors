@@ -116,24 +116,24 @@ The HTML code was validated using the W3C tool.
 ### JS validation
 
 The JavaScript code was validated using the W3C tool.
-![js validation]()
+![js validation](assets/images/readme/js-validator.png)
 
 - JavaScript
   - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
     - The following metrics were returned:
-    - There are 11 functions in this file.
-    - Function with the largest signature takes 2 arguments, while the median is 0.
-    - Largest function has 10 statements in it, while the median is 3.
-    - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+    - There are 4 functions in this file.
+    - Function with the largest signature take 2 arguments, while the median is 0.5.
+    - Largest function has 15 statements in it, while the median is 7.5.
+    - The most complex function has a cyclomatic complexity value of 8 while the median is 1.5.
 
 ### Performance
 
 Website performance was checked with Lighthouse tool.
-![lighthouse test]()
+![lighthouse test](assets/images/readme/lighthouse-test.png)
 
 ### Accessibility
 
-To check accessibility the Wave Web Accessibility Evaluation tool was used. One error was detected, refer to [Bugs](##Bugs).
+To check accessibility the Wave Web Accessibility Evaluation tool was used. No errors were detected.
 ![Wave test](assets/images/readme/wave-test.png)
 
 ### Manual testing
@@ -161,7 +161,7 @@ Browsers:
   
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+No bugs were detected.
 
 ## Technologies used
 
