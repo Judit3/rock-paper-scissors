@@ -58,12 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
             (playerChoice === "scissors" && computerChoice === "paper")
         ) {
             messagePlayer.textContent = "Win";
-            scorePlayerPoints = scorePlayerPoints + 1
-            scorePlayer.textContent = scorePlayerPoints 
+            scorePlayerPoints = scorePlayerPoints + 1;
+            scorePlayer.textContent = scorePlayerPoints;
         } else {
             messagePlayer.textContent = "Lose";
             scoreComputerPoints = scoreComputerPoints + 1;
-            scoreComputer.textContent = scoreComputerPoints 
+            scoreComputer.textContent = scoreComputerPoints;
         }
     }
 });
