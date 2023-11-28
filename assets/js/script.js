@@ -1,3 +1,4 @@
+// Wait for the DOM to finish loading before running the game
 
 document.addEventListener('DOMContentLoaded', function () {
     /**
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /**
     * Update scores
     */
-    function updateScore(result) {
+    function updateScore() {
 
         let playerScoreValue = parseInt(playerScore.innerText);
         let computerScoreValue = parseInt(computerScore.innerText);
@@ -72,5 +73,24 @@ document.addEventListener('DOMContentLoaded', function () {
             computerScoreValue++;
         }
     }
+    /**
+     * Gets the current score from the DOM and increments it by 1
+     */
+    function incrementScore() {
+
+        let player = parseInt(document.getElementById("score").innerText);
+        document.getElementById("score").innerText = ++oldScore;
+    }
+
+    /**
+     * Gets the current tally of incorrect answers from the DOM and increments it by 1
+     */
+    function incrementWrongAnswer() {
+
+        let oldScore = parseInt(document.getElementById("incorrect").innerText);
+        document.getElementById("incorrect").innerText = ++oldScore;
+
+    }
+
 
 });

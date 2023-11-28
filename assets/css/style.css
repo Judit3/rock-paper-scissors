@@ -59,6 +59,7 @@ main {
     line-height: 5rem;
     text-transform: uppercase;
 }
+
  /* Buttons */
 .buttons {
     display: flex;
@@ -88,11 +89,17 @@ main {
 }
 
     /* Game area */
+
 .game-area {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+#message {
+    margin-bottom: 20px;
     text-align: center;
 }
 
