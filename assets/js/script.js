@@ -2,7 +2,7 @@
  * Declare constants for Dom elements
  * and possible choices
  */
-const buttons = document.getElementsByClassName("button");
+const buttonsGames = document.getElementsByClassName("button");
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-img");
@@ -11,9 +11,9 @@ const choices = ["rock", "paper", "scissors"];
 
 
 /**
- * Add eventlistener to all the buttons
+ * Add eventlistener to all the buttonsGames
  */
-for (let button of buttons) {
+for (let button of buttonsGames) {
     button.addEventListener("click", function () {
         let playerChoice = this.getAttribute("data-type");
         playGame(playerChoice);
@@ -24,6 +24,7 @@ for (let button of buttons) {
  * Game function. Accepts the chosen value of the selected button
  */
 function playGame(playerChoice) {
+    console.log(playerChoice);
     const indice = choices.indexOf(playerChoice);
 
     playerImage.src = `assets/images/${choices[indice]}.png`;
@@ -34,15 +35,16 @@ function playGame(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    let result = winner(choices[computerChoice], choices[playerChoice]);
+    // let result = winner(choices[computerChoice], choices[playerChoice]);
 
-    updateScore(result);
+    // updateScore(result);
 }
 
 /**
  * Check who the winner is
  */
-function winner(playerChoice, computerChoice) {
+
+/* function winner(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         alert("Tie");
     } else if (
@@ -54,50 +56,12 @@ function winner(playerChoice, computerChoice) {
     } else {
         alert("Lose");
     }
-}
+} */
 
 /**
  * Update scores
  */
 function updateScore(result) {
-    /**
-     * Declare constants for Dom elements
-     * and possible choices
-     */
-    let buttons = document.getElementsByClassName("button");
-    let playerScore = document.getElementById("player-score");
-    let computerScore = document.getElementById("computer-score");
-    let playerImage = document.getElementById("player-img");
-    let computerImage = document.getElementById("computer-img");
-    let choices = ["rock", "paper", "scissors"];
-
-    /**
-     * Add eventlistener to all the buttons
-     */
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            let playerChoice = this.getAttribute("data-type");
-            playGame(playerChoice);
-        });
-    }
-
-    /**
-     * Game function. Accepts the chosen value of the selected button
-     */
-    function playGame(playerChoice) {
-
-        playerImage.src = `assets/images/${choices[playerChoice]}.png`;
-        playerImage.alt = choices[playerChoice];
-
-        let computerChoice = Math.floor(Math.random() * 3);
-
-        computerImage.src = `assets/images/${choices[computerChoice]}.png`;
-        computerImage.alt = choices[computerChoice];
-
-        let result = winner(choices[computerChoice], choices[playerChoice]);
-
-        updateScore(result);
-    }
 
     /**
      * Check who the winner is
