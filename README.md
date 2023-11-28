@@ -4,6 +4,43 @@ Rock, Paper Scissors is a game where the user plays against the machine which ge
 
 ![Responsice Mockup](assets/images/readme/responsive.png)
 
+---
+
+## CONTENTS
+
+- [Rock, Paper, Scissors](#rock-paper-scissors)
+  - [CONTENTS](#contents)
+  - [Design](#design)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+    - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
+    - [Accessibility](#accessibility)
+  - [Testing](#testing)
+    - [CSS validation](#css-validation)
+    - [HTML validation](#html-validation)
+    - [JS validation](#js-validation)
+    - [Performance](#performance)
+    - [Accessibility](#accessibility-1)
+    - [Manual testing](#manual-testing)
+    - [Unfixed Bugs](#unfixed-bugs)
+  - [Technologies used](#technologies-used)
+    - [Languages used](#languages-used)
+  - [Deployment](#deployment)
+    - [How to deploy](#how-to-deploy)
+    - [Local development](#local-development)
+      - [How to clone](#how-to-clone)
+      - [How to fork](#how-to-fork)
+  - [Credits](#credits)
+    - [Code used](#code-used)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgments](#acknowledgments)
+
+---
+
 ## Design
 
 ### Typography
@@ -193,7 +230,7 @@ To fork the repository:
 ### Code used
 
 1.	Some code was taken and modified from Love Maths Project Challenge and from the example of rock, paper scissors project provided by CodeInstitute.
-4.	The rest of the code was created by the developer.
+2.	The rest of the code was created by the developer.
 
 ### Content
 
