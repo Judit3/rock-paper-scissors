@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     /**
-     * Check who the winner is
+     * Check who the winner is and update score
      */
     function winner(playerChoice, computerChoice) {
         if (playerChoice === computerChoice) {

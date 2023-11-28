@@ -95,8 +95,9 @@ Wireframes were created for mobile and desktop. The wireframes were generates us
 
 ### Features Left to Implement
 
+  - Get the same size for the rock, paper, scissors images.
   - It could have some animation when the player wins or loses.
-
+  
 ### Accessibility
 
 Alt-labels are used for images. Aria-labels for screen readers are implemented at certain places, also semantic elements are used so the page is easy to navigate.
