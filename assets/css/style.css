@@ -25,7 +25,7 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 15vh;
-}  
+}
 
 h1 {
     font-size: 2rem;
@@ -55,7 +55,7 @@ main {
     text-transform: uppercase;
 }
 
- /* Buttons */
+/* Buttons */
 .buttons {
     display: flex;
     justify-content: center;
@@ -80,12 +80,12 @@ main {
 
 .btn-image {
     width: 2rem;
-    height: 2rem;  
+    height: 2rem;
 }
 
 /* Game area */
 .game-area {
-    width: 60%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
@@ -105,7 +105,7 @@ main {
     margin: 1%;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .player {
@@ -157,10 +157,15 @@ footer {
 p {
     padding-bottom: 20px;
 }
-/* media queries*/
-@media (max-width: 425px) {
+
+/* media query: mobiles and smaller (575px and down)*/
+@media screen and (max-width: 575px) {
     h1 {
         text-align: center;
+    }
+
+    .buttons {
+        margin-bottom: 10%;
     }
 
     .game-area {
@@ -168,7 +173,6 @@ p {
         flex-direction: column;
         width: 90%;
         align-items: center;
-        margin-top: 20%;
     }
 
     .player,
@@ -177,6 +181,7 @@ p {
         margin-bottom: 5%;
         text-align: center;
     }
+
     .score-box {
         clear: both;
         margin: 50px 1%;
@@ -184,12 +189,24 @@ p {
         display: flex;
         flex-direction: column;
     }
-    
+
     #score-p {
         margin-bottom: 2rem;
     }
-    
+
     #score-c {
-    margin-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* media query: tablets (576px to 768px)*/
+@media screen and (max-width: 768px) {
+    .game-area {
+        width: 90%;
+    }
+
+    .player,
+    .computer {
+        height: 200px;
     }
 }
