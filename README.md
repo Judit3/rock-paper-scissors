@@ -143,7 +143,7 @@ To check accessibility the Wave Web Accessibility Evaluation tool was used. No e
 | --- | --- | --- | --- | --- |
 | All buttons - hover effect | All buttons with a green background & white image should change when hovered over to a background colour of light blue. | Hover over each button on the page | Each button displayed the correct styling when hovered over | Pass |
 | Cursor | The cursor should display a hand when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the hand cursor | Pass |
-| All Buttons - click | when each button is clicked it calls the corresponding image for the player, it is diplayed the randomly generated computer image, a winn/lose/tie message is shown and the scores are updated | By console logging the data called from the API and different testings inspecting the website I was able to check these features | the right images, message and scores were shown | Pass |
+| All Buttons - click | when each button is clicked it calls the corresponding image for the player, it is diplayed the randomly generated computer image, a winn/lose/tie message is shown and the scores are updated | By console logging the data called from the API and different testings inspecting the website I was able to check these features | The right images, message and scores were shown | Pass |
 | Page responsiviness | When window resized the site was responsive and site layout looked as expected | Resized window | Gallery was responsive and looks good | Pass |
 ---
 
