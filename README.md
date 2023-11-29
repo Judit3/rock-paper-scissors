@@ -1,8 +1,8 @@
 # Rock, Paper, Scissors
 Rock, Paper Scissors is a game where the user plays against the machine which generates random results.
- The site will be targeted toward people who enjoy playing rock, paper, scissors game. 
+The site will be targeted toward people who enjoy playing rock, paper, scissors game.
 
-![Responsice Mockup](assets/images/readme/responsive.png)
+![Responsive Mockup](assets/images/readme/responsive.png)
 
 ---
 
@@ -51,7 +51,7 @@ Google Fonts was used for the Josefin Sans, it is used for the entire site. It i
 
 ### Imagery
 
-The images were taken from clipartmax.com. I have credited these in the [Credits](#credits) section.
+The images were taken from clipartmax.com. I have credited this in the [Credits](#credits) section.
 
 ### Wireframes
 
@@ -72,14 +72,14 @@ Wireframes were created for mobile and desktop. The wireframes were generates us
 - __The Game Options__
 
   - This section will allow the user to play the game. The users will be able to easily see buttons with icons that allow them to play.
-  - The users will be able to select between rock, paper or scissors to be played, they will be playing by clicking on the different buttons with icons, the chosen buton will change its color to match the color of the players choice displayed under the buttons.
+  - The users will be able to select between rock, paper or scissors to be played, they will be playing by clicking on the different buttons with icons, the chosen button will change its colour to match the colour of the players choice displayed under the buttons.
   
 ![Buttons area](assets/images/readme/buttons-area.png)
 
 - __The Choice Area__
 
   - The choice area is where the users will be able to see their choice and the computer generated choice.
-  - Once users have made their selection by clicking on on of the buttons a pop-up will make it known to the users if they won or lose and the images of their and the computer choices will be shown.
+  - Once users have made their selection by clicking on one of the buttons a message will let the users know if they won or lose and the images of their and the computer choices will be shown.
 
 ![Choice area](assets/images/readme/choice-area.png)
 
@@ -91,11 +91,11 @@ Wireframes were created for mobile and desktop. The wireframes were generates us
 
 - __The Footer__
 
-  - The footer section shows the rtules of the game.
+  - The footer section shows the rules of the game.
 
 ### Features Left to Implement
 
-  - Get the same size for the rock, paper, scissors images.
+  - Get the same height for the rock, paper, scissors images.
   - It could have some animation when the player wins or loses.
   
 ### Accessibility
@@ -116,16 +116,15 @@ The HTML code was validated using the W3C tool.
 
 ### JS validation
 
-The JavaScript code was validated using the W3C tool.
+The JavaScript code was validated using the JSHint tool.
 ![js validation](assets/images/readme/js-validator.png)
 
-- JavaScript
-  - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
-    - The following metrics were returned:
-    - There are 4 functions in this file.
-    - Function with the largest signature take 2 arguments, while the median is 0.5.
-    - Largest function has 15 statements in it, while the median is 7.5.
-    - The most complex function has a cyclomatic complexity value of 8 while the median is 1.5.
+- No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+- The following metrics were returned:
+  - There are 4 functions in this file.
+  - Function with the largest signature take 2 arguments, while the median is 0.5.
+  - Largest function has 15 statements in it, while the median is 7.5.
+  - The most complex function has a cyclomatic complexity value of 8 while the median is 1.5.
 
 ### Performance
 
@@ -139,11 +138,11 @@ To check accessibility the Wave Web Accessibility Evaluation tool was used. No e
 
 ### Manual testing
 
-Manual testing was done to check common elements and how the perform on different devices:
+Manual testing was done to check common elements and how they perform on different devices:
 
-1.	Clicking on any of the buttons loads the right image on the player choice and the computer choice is automatically generated, trigering the win/lose alert and updating the scores
-2.  Confirmation that the image displayed, the result and the update of scores were correct
-3.	The responsiveness of the web page
+1.	Clicking on any of the buttons loads the right image on the player choice and the computer choice is automatically generated, showing the win/lose/tie message and updating the scores.
+2.  Confirmation that the right image is displayed, the result and the update of scores are correct.
+3.	The responsiveness of the web page.
 
 Following devices and browsers were used:
 
@@ -154,6 +153,7 @@ Laptop:
 Mobile Devices:
 
 - iPhone SE
+- Samsung 
   
 Browsers:
 
@@ -169,7 +169,6 @@ No bugs were detected.
 __GitHub__ – storage and deployment<br>
 __Codeanywhere__ – IDE used to write, edit, commit and push the code to GitHub<br>
 __Google Fonts__ – import font<br>
-__Font Awesome__- import social media and contact icons<br>
 __Favicon Generator Website__ – convert logo<br>
 __Balsamiq__ – wireframes design<br>
 __Am I Responsive?__ – check responsiveness of the website<br>
@@ -235,11 +234,11 @@ To fork the repository:
 
 ### Content
 
-Content was partially written and created by the developer with inspiration from other Codeinstitute projects.
+Content was partially written and created by the developer with inspiration from other CodeInstitute projects.
 
 ### Media
 
-Images were downloaded from website clipartmax.com (<https://www.clipartmax.com) 
+Images were downloaded from website clipartmax.com (https://www.clipartmax.com) 
 
 ### Acknowledgments
 
