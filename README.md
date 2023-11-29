@@ -25,6 +25,7 @@ The site will be targeted toward people who enjoy playing rock, paper, scissors 
     - [Performance](#performance)
     - [Accessibility](#accessibility-1)
     - [Manual testing](#manual-testing)
+  - [| Page responsiviness | When window resized the site was responsive and site layout looked as expected | Resized window | Gallery was responsive and looks good | Pass |](#-page-responsiviness--when-window-resized-the-site-was-responsive-and-site-layout-looked-as-expected--resized-window--gallery-was-responsive-and-looks-good--pass-)
     - [Unfixed Bugs](#unfixed-bugs)
   - [Technologies used](#technologies-used)
     - [Languages used](#languages-used)
@@ -138,7 +139,15 @@ To check accessibility the Wave Web Accessibility Evaluation tool was used. No e
 
 ### Manual testing
 
-Manual testing was done to check common elements and how they perform on different devices:
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| All buttons - hover effect | All buttons with a green background & white image should change when hovered over to a background colour of light blue. | Hover over each button on the page | Each button displayed the correct styling when hovered over | Pass |
+| Cursor | The cursor should display a hand when a user moves the mouse over a button | Moved the mouse over each button to check the cursor changed upon entering the button | The cursor changed from the arrow cursor to the hand cursor | Pass |
+| All Buttons - click | when each button is clicked it calls the corresponding image for the player, it is diplayed the randomly generated computer image, a winn/lose/tie message is shown and the scores are updated | By console logging the data called from the API and different testings inspecting the website I was able to check these features | the right images, message and scores were shown | Pass |
+| Page responsiviness | When window resized the site was responsive and site layout looked as expected | Resized window | Gallery was responsive and looks good | Pass |
+---
+
+Sumarizing, manual testing was done to check common elements and how they perform on different devices:
 
 1.	Clicking on any of the buttons loads the right image on the player choice and the computer choice is automatically generated, showing the win/lose/tie message and updating the scores.
 2.  Confirmation that the right image is displayed, the result and the update of scores are correct.
