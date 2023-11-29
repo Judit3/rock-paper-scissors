@@ -95,7 +95,7 @@ Wireframes were created for mobile and desktop. The wireframes were generates us
 
 ### Features Left to Implement
 
-  - Get the same height for the rock, paper, scissors images.
+  - Improve the rock, paper, scissors images.
   - It could have some animation when the player wins or loses.
   
 ### Accessibility
