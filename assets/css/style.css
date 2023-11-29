@@ -1,9 +1,7 @@
 /* Google fonts import */
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* asterisk wildcard selector to override default styles added by the browser */
-
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +9,6 @@
 }
 
 /* general style */
-
 body {
     min-height: 100vh;
     display: flex;
@@ -20,7 +17,6 @@ body {
 }
 
 /* Header */
-
 header {
     background-color: lightgray;
     text-transform: uppercase;
@@ -48,7 +44,6 @@ h1 {
 }
 
 /* Main */
-
 main {
     background-color: whitesmoke;
     flex: 1 0 auto;
@@ -88,8 +83,7 @@ main {
     height: 2rem;  
 }
 
-    /* Game area */
-
+/* Game area */
 .game-area {
     width: 60%;
     margin-left: auto;
@@ -107,8 +101,11 @@ main {
 .player,
 .computer {
     width: 45%;
+    height: 250px;
     margin: 1%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .player {
@@ -124,7 +121,7 @@ main {
 #player-img,
 #computer-img {
     width: 75%;
-    padding: 1%;
+    margin: 1%;
 }
 
 .score-box {
@@ -144,7 +141,6 @@ main {
 }
 
 /* Footer */
-
 footer {
     background-color: lightgray;
     text-align: center;
@@ -161,7 +157,7 @@ footer {
 p {
     padding-bottom: 20px;
 }
-
+/* media queries*/
 @media (max-width: 425px) {
     h1 {
         text-align: center;
